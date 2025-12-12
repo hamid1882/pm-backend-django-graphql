@@ -20,7 +20,7 @@ SECRET_KEY = SECRET_KEY = os.getenv(
     "SECRET_KEY", "0f44e25a559cd409db54a7eb55f41e01")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
