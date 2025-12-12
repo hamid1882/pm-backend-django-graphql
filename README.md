@@ -1,39 +1,42 @@
-# GraphQL Django CRUD Example
+# Project Management API
 
-This repository contains a sample Django project that demonstrates the implementation of a GraphQL API for performing CRUD (Create, Read, Update, Delete) operations on two models: Category and Ingredient. The project uses the Graphene-Django library to create the GraphQL API, providing a modern and efficient way to interact with the database.
-
-![Django-GraphQL](https://github.com/ashishkushwaha22/Django-GraphQL/assets/79715106/953a1a89-6725-4c71-93a0-f34ca8fcaffd)
-
+A Django-based GraphQL API for managing organizations, projects, and tasks. Built with Django and Graphene-Django to provide a modern, efficient interface for project management operations.
 
 ## Features
 
-- Create, read, update, and delete categories and ingredients using GraphQL queries and mutations.
-- Use Django models to define the data schema and relationships.
-- Utilize Django's ORM to handle database operations behind the scenes.
-- Showcase proper structuring of a Django project and GraphQL API integration.
-- Includes sample queries and mutations for easy testing and learning.
+- Manage organizations with unique slugs and contact information
+- Create and track projects within organizations
+- Assign and manage tasks within projects
+- Full CRUD operations via GraphQL API
+- Django admin interface for data management
+- GraphQL playground for interactive API exploration
+
+## Models
+
+- **Organization**: Companies or organizations in the system
+- **Project**: Projects belonging to organizations with status tracking
+- **Task**: Individual tasks within projects with assignment capabilities
 
 ## Technologies Used
 
-- Django
-- Graphene-Django
-- SQLite (or your preferred database)
-- Python
+- Django 4.2.4
+- Graphene-Django 3.1.5
+- SQLite (default database)
+- Python 3.x
+
+## Installation
+
+1. Clone the repository
+2. Install dependencies: `pip install -r requirements.txt`
+3. Run migrations: `python manage.py migrate`
+4. Create a superuser: `python manage.py createsuperuser`
+5. Start the server: `python manage.py runserver`
 
 ## Usage
 
-1. Clone the repository: `git clone https://github.com/ashishkushwaha22/Django-GraphQL.git`
-2. Install project dependencies: `pip install -r requirements.txt`
-3. Configure your database settings in `settings.py`.
-4. Run migrations: `python manage.py migrate`
-5. Start the development server: `python manage.py runserver`
+Access the GraphQL playground at `http://127.0.0.1:8000/graphql/` to interact with the API.
 
-You can access the GraphQL interface at `http://127.0.0.1:8000/graphql/` to interact with the API and perform CRUD operations on categories and ingredients.
-
-
-## Contributions
-
-Contributions and suggestions are welcome! Feel free to fork this repository, make improvements, and submit pull requests.
+Access the admin interface at `http://127.0.0.1:8000/admin/` for database management.
 
 ## License
 
